@@ -1,0 +1,30 @@
+.homepage-container {
+    color: white;
+}
+
+h1 {
+    font-family: 'BronzPersonalUseOnly', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+/* Media queries for responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        padding: 1.3rem 0.7rem;
+    }
+}
+
+/* Smaller devices (320px wide) */
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

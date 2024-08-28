@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'BronzPersonalUseOnly';
+  src: url('../public/fonts/Bronz\ PERSONAL\ USE\ ONLY!.otf') format('opentype'),
+       url('../public/fonts/Bronz\ PERSONAL\ USE\ ONLY!.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;  /* Ensures that both html and body take up the full height of the viewport */
+  margin: 0;     /* Removes default margin */
+  padding: 0;    /* Removes default padding */
+}
+
+body {
+  background-image: url('/shelves.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Times New Roman', Times, serif, 'BronzPersonalUseOnly';
+}
+

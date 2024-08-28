@@ -1,0 +1,64 @@
+.item-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Bronz FOR PERSONAL USE ONLY! Regular';
+  margin: 0.5rem;
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Flexbox for item name and quantity */
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-header > h3 {
+  color: #ffffff;
+  font-family: 'Bronz FOR PERSONAL USE ONLY! Regular';
+  padding: 0.3rem;
+  margin-right: 1rem; /* Add space between name and quantity */
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.item-quantity input {
+  width: 50px;
+  margin-left: 0.5rem;
+}
+
+.item-container > p {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.item-buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.item-buttons button {
+  margin-right: 0.5rem;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #043e04;
+  color: white;
+  cursor: pointer;
+}
+
+.item-buttons button:hover {
+  opacity: 0.8;
+}

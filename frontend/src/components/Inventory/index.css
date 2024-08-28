@@ -1,0 +1,161 @@
+.inventory-container {
+    color: white;
+    font-family: 'Bronz FOR PERSONAL USE ONLY! Regular';
+}
+
+.item-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure elements can wrap if needed */
+}
+
+button {
+    font-family: 'BronzPersonalUseOnly';
+    padding: 8px;
+    margin-left: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #043e04;
+    color: white;
+    cursor: pointer;
+    /* max-width: 30%; */
+
+}
+
+.inventory > h3 {
+    font-family: 'BronzPersonalUseOnly';
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 
+        -1px -1px 0 #000,  /* Top-left shadow */
+         1px -1px 0 #000,  /* Top-right shadow */
+        -1px  1px 0 #000,  /* Bottom-left shadow */
+         1px  1px 0 #000;  /* Bottom-right shadow */
+}
+
+.inventory-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    margin: 0.1rem;
+    border-radius: 5px;
+    border: solid gray 1px;
+}
+
+/* Modal content styling */
+.ReactModal__Content {
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    max-height: 50vh;
+    max-width: 60%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+/* Modal overlay styling */
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CREATION/EDIT FORM Modal content styling */
+.CreationForm_ReactModal__Content {
+    max-height: 75vh;
+    max-width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.item-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-form .button-container {
+    grid-column: span 3; /* Make the button container span all columns */
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between buttons */
+}
+
+/* Media queries for responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+        .create-btn {
+            margin: 0.5rem; 
+            padding: 0.8rem 1rem;
+            max-width: 250px;
+        }
+        
+        .inventory-list {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            gap: 0;
+            padding: 0.1rem;
+        }
+
+        .ReactModal__Content {
+            max-height: 70vh;
+            max-width: 70%;
+        }
+
+        /* CREATION/EDIT FORM Modal content styling */
+        .CreationForm_ReactModal__Content {
+            max-height: 75vh;
+            max-width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .item-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+}
+
+/* Smaller devices (320px wide) */
+@media only screen and (max-width: 320px) {
+
+    .item-bar > input {
+        margin: 0rem 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .search-btn {
+        margin: 0.5rem; /* Add space above the search button */
+    }
+
+    .create-btn {
+        margin: 0rem 0.5rem;
+    }
+
+    .ReactModal__Content {
+        max-height: 70vh;
+        max-width: 75%;
+    }
+}

@@ -1,0 +1,113 @@
+/* Ensure the inner div expands to fit its content */
+.auth > div {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for the authentication page */
+.auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Styles for the form container */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the form elements */
+.auth-form input {
+    width: 70%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.auth-form input {
+    width: 100%;
+}
+
+.email, .password {
+    width: 100%;
+}
+
+/* Remove border for button */
+.auth button {
+    border: none;
+    background-color: #043e04;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.auth button:hover {
+    background-color: #16c243;
+}
+
+/* Basic label styling */
+.auth-form label {
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+    color: #333333;
+}
+
+/* Error message styling */
+.auth .error {
+    color: #ff0000;
+    margin-top: 0.5rem;
+}
+
+.toggle-auth-mode {
+    width: 25%;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .toggle-auth-mode {
+        width: 50%;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .auth > div {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-form {
+        width: 95%;
+        padding: 1rem;
+    }
+
+
+    .toggle-auth-mode {
+        width: 65%;
+    }
+}
